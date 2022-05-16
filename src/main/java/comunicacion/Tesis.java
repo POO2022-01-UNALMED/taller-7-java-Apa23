@@ -60,7 +60,7 @@ public class Tesis extends Escrito {
 				super.getAutor() + "\n" +
 				super.getPaginas() + "\n" +
 				idea + "\n" +
-				argumentos + "\n" +
+				argumentos.length + "\n" +
 				conclusion + "\n" +
 				referencias;
 	}	 
