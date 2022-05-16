@@ -2,14 +2,14 @@ package comunicacion;
 
 public class Libro extends Escrito {
 	private String co_autor;
-	private String editor;
+	private String editorial;
 	private String edicion;
 	private String interpretacion;
-	public Libro(String origen, String titulo, String autor, int paginas, String co_autor, String editor,
+	public Libro(String origen, String titulo, String autor, int paginas, String co_autor, String editorial,
 			String edicion, String interpretacion) {
 		super(origen, titulo, autor, paginas);
 		this.co_autor = co_autor;
-		this.editor = editor;
+		this.editorial = editorial;
 		this.edicion = edicion;
 		this.interpretacion = interpretacion;
 	}
@@ -19,11 +19,11 @@ public class Libro extends Escrito {
 	public void setCo_autor(String co_autor) {
 		this.co_autor = co_autor;
 	}
-	public String getEditor() {
-		return editor;
+	public String getEditorial() {
+		return editorial;
 	}
-	public void setEditor(String editor) {
-		this.editor = editor;
+	public void setEditorial(String editor) {
+		this.editorial = editor;
 	}
 	public String getEdicion() {
 		return edicion;
@@ -47,7 +47,7 @@ public class Libro extends Escrito {
 	}
 	
 	public String toString() {
-		return super.getOrigen() + super.getTitulo() + super.getAutor() + super.getPaginas() + co_autor + editor + edicion;
+		return super.getOrigen() + super.getTitulo() + super.getAutor() + super.getPaginas() + co_autor + editorial + edicion;
 	}	 
 
 	
