@@ -21,9 +21,15 @@ public class Fabula extends Escrito {
 		this.interpretacion = interpretacion;
 	}
 	
-	public int palabrasTotales(int x) {}
+	public int palabrasTotales(int param) {
+		return super.getPaginas()*param;
+	}
 	
-	public String interpretacion() {}
+	public String interpretacion() {
+		return interpretacion;
+	}
 	
-	public String toString() {}	 
+	public String toString() {
+		return super.getOrigen() + super.getTitulo() + super.getAutor() + super.getPaginas() + ensenanza;
+	}	 
 }
