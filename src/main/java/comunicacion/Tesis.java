@@ -55,6 +55,13 @@ public class Tesis extends Escrito {
 	}
 	
 	public String toString() {
-		return super.getOrigen() + super.getTitulo() + super.getAutor() + super.getPaginas() + idea + argumentos + conclusion + referencias;
+		return super.getOrigen() + "\n" +
+				super.getTitulo() + "\n" +
+				super.getAutor() + "\n" +
+				super.getPaginas() + "\n" +
+				idea + "\n" +
+				argumentos + "\n" +
+				conclusion + "\n" +
+				referencias;
 	}	 
 }
